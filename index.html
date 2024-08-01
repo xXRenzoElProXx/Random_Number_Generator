@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Números Aleatorios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Generador de Números Aleatorios</h1>
+        <form id="numberForm">
+            <div class="form-group">
+                <label for="minNumber">Desde:</label>
+                <input type="number" id="minNumber" value="1" required>
+            </div>
+            <div class="form-group">
+                <label for="maxNumber">Hasta:</label>
+                <input type="number" id="maxNumber" value="10" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Cantidad:</label>
+                <input type="number" id="quantity" value="1" required>
+            </div>
+            <div class="form-group" id="repeatGroup" style="display: none;">
+                <input type="checkbox" id="allowRepeats" class="custom-checkbox">
+                <label for="allowRepeats">Permitir repetidos</label>
+            </div>
+            <button type="submit">Generar</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
