@@ -49,5 +49,19 @@ function generateRandomNumber(min, max) {
 
 function displayResult(numbers) {
     const resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = `<p>${numbers.join('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp')}</p>`;
+    resultDiv.innerHTML = '';
+
+    let row = '';
+    numbers.forEach((number, index) => {
+        row += `<span class="number">${number}</span>`;
+
+        if ((index + 1) % 5 === 0) {
+            resultDiv.innerHTML += row + '<br>';
+            row = '';
+        }
+    });
+
+    if (row !== '') {
+        resultDiv.innerHTML += row;
+    }
 }
