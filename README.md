@@ -33,5 +33,25 @@ Este proyecto es un **Generador de Números Aleatorios** interactivo que permite
 ## 🚀 Instalación y uso
 ### 1. Clona el repositorio a tu máquina local:
 ```bash
-git clone https://github.com/tu_usuario/Random_Number_Generator.git
+git clone https://github.com/xXRenzoElProXx/Random_Number_Generator.git
+```
+### 2. Navega a la carpeta del proyecto:
+```bash
+cd Random_Number_Generator
+```
+### 3. Abre el archivo index.html en tu navegador para visualizar la aplicación.
+
+## 🧑‍💻 Uso de la aplicación
+* **Generar números aleatorios:** Introduce el rango mínimo y máximo, selecciona la cantidad de números a generar y, si lo deseas, marca la opción para permitir repetidos. Haz clic en "Generar" para obtener los números.
+* **Permitir repetidos:** Si seleccionas la opción "Permitir repetidos", el generador puede devolver el mismo número más de una vez.
+* **Ver resultado:** Los números generados se mostrarán en pantalla, con un formato claro y organizado.
+
+## 📂 Estructura de archivos
+```bash
+Random_Number_Generator/
+├── index.html         # Archivo principal de la aplicación.
+├── styles.css         # Hoja de estilos de la aplicación.
+├── script.js          # Lógica de la aplicación y generación de números.
+├── icon.png           # Ícono de la aplicación.
+└── screenshot.png     # Captura de pantalla de la aplicación.
 ```
