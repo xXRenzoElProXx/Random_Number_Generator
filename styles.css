@@ -72,6 +72,20 @@ button:hover {
 #result {
     margin-top: 20px;
     font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#result p {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    display: inline-block;
+    min-width: 50px;
 }
 
 @keyframes fadeIn {
